@@ -1,4 +1,4 @@
-## Riza Sementes
+# Riza Sementes
 This was my first freelancer website. <br>
 The development was split with my friend Micael.<br>
 In this development I could develop team skills, client dealing skills and basic web knowledges. <br>
