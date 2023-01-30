@@ -1,0 +1,360 @@
+/*css do desktop*/
+
+/*div com o fundo de rua*/
+.bg-nossas-cultivares {
+    background-image: url("../img/bg-nossas-cultivares.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    position: relative;
+    margin-top: -8px;
+    z-index: -1;
+    margin-bottom: 80px;
+}
+
+/*conteudo dentro da imagem-rua*/
+.nossas-cultivares-conteudo {
+    margin-left: 16%;
+    height: 95%;
+    position: relative;
+    top: 5%;
+}
+
+.textos {
+    color: var(--branco);
+    margin-left: 10px;
+}
+
+.inicio-cultivares {
+    margin-top: -6%;
+}
+
+.textos h1 {
+    font-size: 47px;
+    font-family: 'Open Sans';
+    font-weight: 300;
+}
+
+.textos p {
+    font-size: 20px;
+    font-family: 'Lora', serif;
+}
+
+/*textos depois da imagem*/
+.primeiros-textos {
+    font-size: 20px;
+    font-family: 'Lora', serif;
+}
+
+.contato-laranja {
+    color: var(--laranja);
+}
+
+/*A área com o fundo verde e degradê*/
+.background-verde {
+    position: relative;
+    padding-bottom: 100px;
+    background-color: #0F4221;
+    transform: skewY(-5deg);
+    margin-top: 200px;
+    background-image: linear-gradient(180deg, #0F4221, #0F4221, #050e08);
+    margin-bottom: 200px;
+}
+
+
+.div-brachiarias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titulo-brachiarias {
+    font-size: 48px;
+    color: #34AF00;
+    font-weight: 600;
+}
+
+/*desfaz o efeito da div torta*/
+
+.desentorta {
+    transform: skewY(5deg);
+}
+
+.img-circulo {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: -105px;
+
+}
+
+.texto-fundo-verde {
+    color: var(--branco);
+    font-size: 41px;
+    margin-left: 22%;
+    margin-right: 22%;
+    margin-top: 50px;
+}
+
+/*css das cultivares*/
+.titulo-cultivares {
+    color: var(--branco);
+    font-size: 26px;
+    width: 100%;
+    text-align: left;
+    font-weight: 500;
+}
+
+.subtitulo-cultivares {
+    color: var(--branco);
+    font-size: 22px;
+    width: 100%;
+    text-align: left;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+.explica-cultivar {
+    color: var(--branco);
+    width: 100%;
+    text-align: left;
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.img-cultivares {
+    width: 100%;
+   
+    border-radius: 12px;
+    margin: 15px 0 5px 0;
+}
+
+.cultivares {
+    margin-top: 30px;
+
+}
+/*Linha pontilhada*/
+
+
+.linha-pontilhada {
+    margin-top: 80px;
+    position: relative;
+    height: 2px;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(255, 255, 255) 60%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 15px 2px;
+    background-repeat: repeat-x;
+}
+
+/*css para desktops pequenos*/
+@media(max-width:1100px) {
+    @media(min-width:960px) {
+        .nossas-cultivares-conteudo {
+            margin-left: 13%;
+
+        }
+
+        .textos {
+            width: 110%;
+            margin-left: 70px;
+        }
+
+        .subtitulo-maior {
+            width: 135%;
+        }
+    }
+}
+
+/*css para celular e tablet*/
+@media screen and (max-width:992px) {
+
+    /*conteúdo dentro da imagem-rua*/
+
+    .inicio-fundo-rua {
+        z-index: -1;
+        position: relative;
+        width: 100%;
+        height: 133px;
+
+    }
+
+    .inicio-fundo-rua img {
+        height: 100%;
+        width: 100%;
+        margin-top: -16px;
+    }
+
+    .inicio-fundo-rua h1 {
+        font-size: 25px;
+        position: absolute;
+        font-family: 'Open Sans';
+        font-weight: 300;
+        color: var(--branco);
+        margin-top: 35px;
+        margin-left: 6.5%;
+    }
+
+    /*3 Imagens circulares*/
+    .imagens-circulares {
+        position: relative;
+        height: 65%;
+        width: 79.16%;
+        margin-left: 10.41%;
+        margin-right: 10.41%;
+        margin-top: -6%;
+    }
+
+    .imagens-circulares img {
+        height: 100%;
+        width: 100%;
+    }
+
+    /*Textos antes da divisoria */
+    .textos {
+        color: #1A1A1A;
+        margin-left: 9.5%;
+        margin-right: 9.5%;
+        margin-top: 70px;
+        font-size: 18px;
+        font-family: 'Lora', serif;
+        font-weight: 400;
+        position: relative;
+        margin-bottom: 50px;
+    }
+
+
+    /*divisoria*/
+    .divisoria-laranja {
+        position: relative;
+
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    .divisoria-laranja img {
+        width: 100%;
+    }
+
+    /*textos depois da divisoria laranja*/
+    .primeiros-textos {
+        background-image: url("../img/bg-laranja-mobile.png");
+        padding: 40px 8% 40px 8%;
+        margin-left: 0%;
+        margin-right: 0%;
+        font-weight: 400;
+
+    }
+
+    .texto-fundo-laranja {
+        font-family: 'Lora', serif;
+        font-size: 18px;
+        color: var(--branco);
+        line-height: 28px;
+    }
+
+    .contato-laranja {
+        margin-top: 20px;
+        color: var(--branco);
+        font-size: 17px;
+        width: 105%;
+        font-weight: 700;
+        line-height: 32px;
+    }
+
+    /*linha verde*/
+    .background-verde {
+        position: relative;
+        transform: skewY(-13deg);
+        padding-bottom: 80px;
+        background-image: linear-gradient(180deg, #0F4221, #0F4221, #050e08);
+        z-index: -1;
+        margin-top: 140px;
+    }
+
+    /*div que tira o final diagonal do fundo verde*/
+    .completa-final-verde {
+        background-image: linear-gradient(180deg, #050f09, #050e08);
+        height: 100px;
+        z-index: -5;
+        margin-top: -250px;
+    }
+
+    .desentorta {
+        z-index: -1;
+        transform: skewY(13deg);
+    }
+
+    /*primeiro texto da parte verde*/
+    .texto-fundo-verde {
+        text-align: left;
+        font-size: 23px;
+        margin-left: 8%;
+        margin-right: 19%;
+        margin-top: 50px;
+        margin-bottom: 65px;
+
+    }
+
+    .cultivares {
+        margin: 0%;
+        margin-left: 5.5%;
+        margin-right: 5.5%;
+
+    }
+
+    .cultivar {
+        margin-bottom: 80px;
+    }
+
+    .titulo-cultivares {
+        color: var(--branco);
+        font-size: 28px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .subtitulo-cultivares {
+        color: var(--branco);
+        font-size: 21px;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+
+    /*css apenas para tablets*/
+    @media (min-width:600px) {
+
+        .completa-final-verde {
+            background-image: linear-gradient(120deg, #08160e, #050e08);
+            height: 250px;
+            z-index: -5;
+            margin-top: -340px;
+        }
+
+        .imagens-circulares {
+
+            height: 80%;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: -4%;
+        }
+
+        .primeiros-textos {
+            margin-top: 100px;
+            margin-bottom: 200px;
+            padding: 80px 8% 80px 8%;
+
+
+        }
+
+    }
+}

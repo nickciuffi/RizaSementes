@@ -1,0 +1,325 @@
+/*Primeira linha do rodapé do desktop e do mobile.*/
+.bg-footer-selos {
+    margin-top: 10%;
+    background-image: url(../img/bg-footer-desktop.jpg);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0%;
+}
+
+p {
+
+    margin-top: 0px;
+}
+
+.linha-com-margem1 {
+    width: 60.202%;
+    margin-bottom: 7%;
+
+}
+
+.linha-com-margem1 img {
+    width: 100%;
+}
+
+.selo-especifico {
+    margin-top: 5%;
+}
+
+.selo-altovigor {
+    margin-top: 1%;
+}
+
+/*Segunda linha do rodapé.*/
+.linha-com-margem2 {
+    width: 80%;
+    margin-bottom: 0%;
+
+}
+
+/*Estilização do desktop*/
+@media screen and (min-width: 993px) {
+    .centraliza-verticalmente {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+    }
+
+    .linha-com-margem2 {
+        padding-left: 5%;
+        padding-top: 20px;
+        margin-top: 0px;
+    }
+
+    .linha-verde-rodape {
+        background-color: var(--verde-escuro);
+        position: relative;
+        height: 181px;
+        width: 100%;
+        margin-bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    /*Logo da linha verde*/
+    .logo-endosso {
+        display: flex;
+        align-items: center;
+
+        height: 100%;
+    }
+
+    .logo-endosso img {
+        margin-left: 25px;
+    }
+
+    /*primeiro texto da linha verde*/
+    .texto-semeando-agronegocio {
+        display: flex;
+        align-items: center;
+
+        height: 100%;
+
+    }
+
+    .texto-semeando-agronegocio p {
+
+        font-family: 'Open Sans', sans-serif;
+        font-size: 21px;
+        margin-left: -20%;
+        border-right: 1px solid var(--branco);
+        width: 75%;
+        height: 55%;
+    }
+
+    /*Mini menu*/
+    .links {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        height: 100%;
+
+    }
+
+    .links div {
+        margin-top: 0px;
+
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: -145px;
+    }
+
+    .links a {
+        margin-top: 0%;
+        margin-bottom: 10px;
+        color: var(--branco);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    /*informações de contato*/
+
+    /*divs que fazem linhas */
+    .linha {
+        margin-left: -75px;
+        background-color: white;
+        position: relative;
+        width: 1px;
+        height: 55%;
+    }
+
+    .direita-dos-icons {
+        margin-left: 10%;
+
+    }
+
+    /*conteudo do contato*/
+    .info-contato-conteudo {
+        position: absolute;
+        font-size: 15px;
+        font-family: 'Open Sans', sans-serif;
+        margin-left: -50px;
+
+        margin-top: -13%;
+    }
+
+    .titulo-contato {
+        font-size: 13px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .texto-comercial {
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .texto-tel {
+
+        font-weight: 300;
+
+    }
+
+    /*icons*/
+
+    .icons-conteudo {
+        width: 100%;
+        margin-left: -15px;
+        height: 40%
+    }
+
+    .icons-conteudo div {
+        width: 200%;
+
+        margin-top: -5px;
+        margin-bottom: 20px;
+    }
+
+    .icons-conteudo img {
+        opacity: 0.9;
+    }
+
+    .icons-conteudo img:hover {
+        opacity: 1;
+    }
+}
+
+/*Css para versão mobile e tablets*/
+@media screen and (max-width: 992px) {
+
+    /*primeira linha */
+    .bg-footer-selos {
+        background-image: none;
+
+    }
+
+    .img-selos-mobile {
+        margin-bottom: 20%;
+
+        width: 90%;
+    }
+
+    /*4 imagens juntas*/
+    .selo-altovigor {
+        margin-top: 5%;
+
+    }
+
+    /*segunda linha*/
+    .linha-verde-rodape {
+
+        position: absolute;
+        width: 100%;
+        margin-bottom: 0%;
+
+    }
+
+    .logo-endosso {
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+    }
+
+
+    .logo-endosso img {
+        width: 80%;
+    }
+
+    /*primeiro texto da linha verde*/
+    .texto-semeando-agronegocio {
+        margin-top: 25px;
+        margin-bottom: 25px;
+
+
+    }
+
+    .texto-semeando-agronegocio p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 31px;
+
+        height: 55%;
+    }
+
+    /*mini menu*/
+    .links {
+
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .links a {
+        font-weight: 700;
+        color: var(--branco);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 17px;
+    }
+
+    /*informações de contato*/
+    .info-contato {
+
+        margin-bottom: 30px;
+        margin-top: 25px;
+
+        font-size: 15px;
+        font-family: 'Open Sans', sans-serif;
+
+    }
+
+    .info-contato-conteudo {
+        position: relative;
+        margin-bottom: 25px;
+        margin-top: 25px;
+        font-size: 15px;
+        font-family: 'Open Sans', sans-serif;
+
+
+    }
+
+    .texto-comercial {
+        font-size: 17px;
+        font-weight: 400;
+    }
+
+    .titulo-contato {
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .texto-tel {
+
+        font-weight: 300;
+
+    }
+
+    /*div que armazena os icones das mídias sociais*/
+
+    .linha-com-margem2 {
+        padding-bottom: 100px;
+    }
+
+    @media screen and (min-width:600px) {
+        .logo-endosso img {
+            width: 50%;
+        }
+    }
+}
+
+.laranja-final {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: var(--laranja);
+    margin-bottom: 0%;
+    margin-top: 0%;
+}

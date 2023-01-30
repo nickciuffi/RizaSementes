@@ -1,0 +1,99 @@
+.back {
+    width: 100%;
+    height: 193px;
+    background-image: url("../img/bg-contato-desktop@2x.jpg");
+    display: flex;
+    align-items: center;
+}
+
+.back p {
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-left: 16%;
+    color: var(--branco);
+}
+
+.txt-contato {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 16%;
+    font-size: 20px;
+}
+
+.txt-contato p {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+}
+
+.contato {
+    color: #163619;
+}
+
+.cont-titulo {
+    font-size: 28px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.cont-txt {
+    padding-top: 10px;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.conteudo-contato {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.info-contato {
+    margin-bottom: -120px;
+}
+
+#tel {
+    margin-top: 5px;
+}
+
+#endereco {
+    padding-top: 10px;
+}
+
+.link-contato {
+    color: #163619;
+    font-family: 'Lora', serif;
+    opacity: 1;
+}
+
+.link-contato:hover {
+    color: #087c14;
+}
+
+@media only screen and (max-width: 992px) {
+
+    .back p,
+    .txt-contato {
+        margin-left: 10%;
+    }
+
+    .info-contato {
+        margin-left: 6px;
+    }
+
+    .contato {
+        margin-bottom: 40px;
+    }
+
+    .info-contato {
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .txt-contato {
+        max-width: 85%;
+    }
+}

@@ -1,0 +1,468 @@
+/*primeira parte da página(fundo branco)*/
+.comeco-branco {
+    position: relative;
+    height: 219px;
+    width: 100%;
+
+}
+
+.comeco-branco p {
+    margin-left: 6%;
+    position: relative;
+    width: 95%;
+    color: #104522;
+}
+
+.titulo {
+
+    margin-top: 60px;
+    font-size: 42px;
+    font-weight: regular;
+
+}
+
+.subtitulo {
+    font-size: 38px;
+    font-weight: light;
+    font-style: italic;
+}
+
+.imagem-cultivar {
+    margin-top: 65px;
+    width: 80%;
+    margin-left: 24%;
+    border-radius: 16px;
+
+}
+
+.imagem-cultivar img {
+    width: 100%;
+    border-radius: 16px;
+    border: 2px solid #FFFFFF;
+}
+
+/*Começo da parte com fundo verde*/
+.borda-laranja {
+    z-index: -1;
+    position: relative;
+    height: 27px;
+    width: 100%;
+}
+
+.borda-laranja img {
+    position: absolute;
+    margin-left: -50%;
+    width: 100%;
+    height: 100%;
+}
+
+.fundo-verde {
+
+    padding-bottom: 80px;
+    width: 100%;
+    background-image: linear-gradient(180deg, #0F4221, #0F4221, #050e08);
+    color: #FFFFFF;
+}
+
+/*parte abaixo da primeira imagem*/
+.beneficios-cont {
+    margin-left: 14%;
+    margin-right: 15.5%;
+    width: 70.5%;
+
+}
+
+.coluna-direita {
+    margin-top: -16px;
+}
+
+.titulo-beneficios {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 41px;
+    margin-top: 70px;
+    margin-bottom: 80px;
+}
+
+/*Textos dos benefícios desktop*/
+.nome-cientifico {
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.titulo-interno {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 33px;
+}
+
+.texto-interno {
+    font-family: 'Lora', serif;
+    font-size: 20px;
+}
+
+/*Final dos benefícios e começo das iformações técnicas desktop*/
+.linha-pontilhada {
+    margin-top: 80px;
+    position: relative;
+    height: 2px;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(255, 255, 255) 60%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 15px 2px;
+    background-repeat: repeat-x;
+}
+
+.titulo-info-tec {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 43px;
+    margin-top: 70px;
+    margin-bottom: 80px;
+}
+
+.linha-info {
+    margin-left: 0px;
+    margin-right: 20px;
+
+}
+
+.coluna-info {
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.coluna-info p {
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.div-info-direita {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 30px;
+}
+
+/*Imagem dos círculos desktop*/
+.div-info-direita img {
+    height: 26px;
+    margin-left: 25px;
+}
+
+.div-info-direita p {
+    margin-bottom: 0%;
+    margin-left: -6.8px;
+}
+
+.esquerda {
+    align-items: flex-end;
+
+}
+
+.direita {
+    align-items: flex-start;
+}
+
+/*Div que armazena imagens e parágrafos*/
+.direita div {
+    margin-left: 7px;
+}
+
+/*PDF*/
+.baixar-pdf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.baixar-pdf p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/*botão no final da página que volta para a página das nossas cultivares*/
+.voltar-lista {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.voltar-lista a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+    color: #FFFFFF;
+
+}
+
+.link-voltar p {
+    margin-left: 15px;
+    font-family: 'open sans', serif;
+    font-size: 14px;
+}
+
+.link-voltar img {
+    height: 22px;
+}
+
+/*css específico do desktop*/
+@media (min-width:992px) {
+
+    .texto-lateral-imagem {
+        display: flex;
+        position: relative;
+        color: #FFFFFF;
+        height: 22.6%;
+        margin-top: -180px;
+
+    }
+
+    .texto-lateral-imagem p {
+        position: absolute;
+        margin-top: 35%;
+        font-family: 'Lora', serif;
+        font-size: 21px;
+        font-weight: 400;
+
+        margin-left: 6%;
+        width: 78.5%;
+        height: 45%;
+
+    }
+
+    .linha-branca {
+        position: absolute;
+        align-self: flex-end;
+        height: 2px;
+        width: 80%;
+        background-color: #FFFFFF;
+        margin-left: 5.6%;
+    }
+
+}
+
+/*Css para desktops largos*/
+@media (min-width:1600px) {
+    .imagem-cultivar {
+
+        margin-left: 0px;
+
+    }
+}
+
+/*css do mobile e tablet*/
+@media (max-width:992px) {
+
+    /*parte branca*/
+    .titulo {
+        margin-top: 20px;
+        font-size: 28px;
+        font-weight: 500;
+        margin-left: 6%;
+    }
+
+    .subtitulo {
+        font-size: 24px;
+    }
+
+    .imagem-cultivar {
+        margin-top: 15px;
+        width: 96%;
+        margin-left: 2%;
+
+    }
+
+    .comeco-branco {
+        height: 200px;
+
+    }
+
+    /*Começo da parte verde*/
+    .borda-laranja-mobile {
+        z-index: -1;
+        position: absolute;
+        height: 27px;
+        width: 100%;
+
+    }
+
+    .borda-laranja-mobile img {
+
+        margin-left: 0;
+        width: 100%;
+        margin-top: -20px;
+    }
+
+    .fundo-verde {
+        margin-top: 20px;
+
+    }
+
+    .texto-lateral-imagem {
+
+        position: relative;
+        color: #FFFFFF;
+        margin-top: 30px;
+    }
+
+    .texto-lateral-imagem p {
+        position: relative;
+        margin-top: 0%;
+        font-family: 'Lora', serif;
+        font-size: 20px;
+        font-weight: 400;
+        width: 94.72%;
+        margin-left: 2.64%;
+
+    }
+
+    .linha-branca {
+        position: relative;
+        height: 2px;
+        width: 85.8%;
+        margin-top: 70px;
+        margin-left: 7.1%;
+        background-color: #FFFFFF;
+    }
+
+    /*começo da parte dos benefícios*/
+    .titulo-beneficios {
+        position: relative;
+        width: 80%;
+        text-align: left;
+        font-size: 41px;
+        margin-top: 70px;
+        margin-left: 7.1%;
+        margin-bottom: 80px;
+    }
+
+    .titulo-interno {
+        margin-top: 16px;
+        margin-bottom: 40px;
+        font-size: 33px;
+        margin-left: 10px;
+    }
+
+    .coluna-direita {
+        margin-top: 50px;
+    }
+
+    .coluna-direita p {
+        margin-top: 30px;
+
+    }
+
+    .coluna-direita>.texto-interno {
+        margin-top: -10px;
+    }
+
+    .linha-info {
+        margin-right: 0;
+        margin-left: 30px;
+
+
+    }
+
+    /*Parte das informações técnicas*/
+    .item-info p {
+        margin: 0%;
+        margin-bottom: 2px;
+    }
+
+    .item-titulo {
+        color: #93AE96;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 0px;
+    }
+
+    .item-resp {
+        font-family: 'Lora', serif;
+        display: flex;
+        align-items: center;
+        height: 30px;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    /*Imagem das bolas*/
+    .item-resp img {
+        height: 14px;
+        margin-left: 25px;
+    }
+
+    .titulo-info-tec {
+        position: relative;
+        width: 90%;
+        text-align: left;
+        font-size: 43px;
+        margin-top: 70px;
+        margin-bottom: 40px;
+        margin-left: 28px;
+    }
+
+    .beneficios-cont {
+        margin-left: 3%;
+        margin-right: 3%;
+        width: 94.169%;
+
+    }
+
+    .texto-interno {
+        margin-top: -120px;
+    }
+
+    /*Css apenas para tablet*/
+    @media screen and (min-width:600px) {
+        .imagem-cultivar {
+            margin-top: 15px;
+            width: 80%;
+            margin-left: 10%;
+
+        }
+
+        .comeco-branco {
+            height: 300px;
+
+        }
+
+        .fundo-verde {
+            margin-top: 20px;
+
+        }
+
+        .texto-lateral-imagem p {
+            margin-top: 0%;
+            font-size: 22px;
+            font-weight: 400;
+            width: 85%;
+            margin-left: 7.5%;
+
+        }
+
+        .texto-lateral-imagem {
+            margin-bottom: -200px;
+            margin-top: 50px;
+        }
+
+        .beneficios-cont {
+            margin-left: 5%;
+            margin-right: 5%;
+            width: 90%;
+
+        }
+
+    }
+
+}

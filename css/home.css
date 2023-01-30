@@ -1,0 +1,937 @@
+/*============ HERO =============*/
+.video-fundo {
+    position: absolute;
+    z-index: -20;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+}
+
+.video-fundo::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    content: '';
+    z-index: -950;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.textura {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -900;
+    background: url(../img/textura.png);
+}
+
+.hero {
+    z-index: 1;
+    position: relative;
+    background-size: cover;
+    min-height: 87.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+
+    font-size: 25px;
+    color: var(--branco);
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.texto-hero {
+    margin-top: 15px;
+    max-width: 850px;
+    color: var(--branco);
+    font-weight: 300;
+}
+
+.radius {
+    border-radius: 8px;
+}
+
+#btn-conheca {
+    padding: 15px 25px;
+    font-weight: 400;
+}
+
+#btn-conheca:hover {
+    background-color: #b33b03;
+}
+
+#faixa-hero {
+    background-image: url(../img/faixa-hero.png);
+    height: 55px;
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    .hero h2 {
+        font-size: 23px;
+        text-align: left;
+        font-weight: 600;
+    }
+}
+
+/*============= TEXTOS DE APRESENTAÇÃO - RIZA ============*/
+.apresentacao-riza {
+    margin-top: -5%;
+}
+
+.titulo-medio {
+    font-size: 26.5px;
+    font-weight: 300;
+    line-height: 1.3;
+}
+
+.texto1-home {
+    font-size: 18px;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+#img-sementes {
+    position: relative;
+    z-index: 5;
+    margin-top: -20%;
+    width: 100%;
+}
+
+.linha-laranja {
+    height: 1px;
+    background-color: var(--laranja);
+    border: none;
+    margin: 5% 5% 0 5%;
+    width: 90%;
+}
+
+.texto-col2 {
+    padding-left: 25px;
+}
+
+#tx-pt2 {
+    margin-top: 35px;
+}
+
+.espaco-linha {
+    margin-top: 22px;
+}
+
+@media (min-width: 1800px) {
+    .titulo-medio {
+        font-size: 36px;
+    }
+
+    .texto1-home {
+        font-size: 24px;
+    }
+}
+
+/*========== PRINCIPAIS BENEFÍCIOS DO CAPIM ==========*/
+.intro-capim {
+    background-image: url(../img/img-bg-beneficios-home.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+#titulo-capim {
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--verde-cinza);
+}
+
+.texto-capim {
+    font-size: 18px;
+    font-family: 'Lora', serif;
+    color: var(--verde-cinza);
+}
+
+.tx-bold {
+    font-weight: 600;
+    font-family: 'Lora', serif;
+}
+
+.img-beneficios-desk {
+    max-width: 100%;
+}
+
+.centralizado {
+    margin-top: 10%;
+}
+
+/*=========================== CARROSSEL ==========================*/
+
+/* Hide the images by default */
+.mySlides {
+    width: 100%;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    margin-top: -35%;
+    padding: 16px;
+    transition: 0.6s ease;
+    user-select: none;
+    opacity: 0.8;
+}
+
+.prev:hover,
+.next:hover {
+    opacity: 1;
+}
+
+.prev a,
+.next a {
+    height: 100%;
+    width: 100%;
+}
+
+.prev {
+    margin-left: -10%;
+}
+
+.next {
+    margin-right: -10%;
+}
+
+/* Pontinhos*/
+.pontos {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #f3b610;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+}
+
+.active,
+.pontos:hover {
+    background-color: #f03901;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/*================== CARROSSEL MOBILE =========================*/
+/* Definição das imagens */
+.mySlides-mob {
+    width: 100%;
+    margin-top: 0;
+}
+
+.myslides-mob img {
+    border-radius: 12px;
+}
+
+/* Setas */
+.setas-mob {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -80%;
+}
+
+.prev-mob,
+.next-mob {
+    cursor: pointer;
+    font-size: 50px;
+    transition: 0.6s ease;
+    padding: 5px;
+    z-index: 1;
+}
+
+.prev-mob:hover,
+.next-mob:hover {
+    opacity: 1;
+}
+
+.prev-mob a,
+.next-mob a {
+    color: #0F4521;
+    height: 100%;
+    width: 100%;
+}
+
+/* Pontinhas*/
+.pontinhos-mob {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 52%;
+}
+
+.pontos-mob {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    background-color: #a5a5a5;
+    border-radius: 50%;
+    transition: 0.6s ease;
+    margin-left: 15px;
+}
+
+.activemob,
+.pontos-mob:hover {
+    background-color: #4d4d4d;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.espacamento {
+    width: 100%;
+    height: 100px;
+}
+
+/*========== Menos custo e mais kg ==========*/
+.menos-custo {
+    background-image: url(../img/img-bg-menoscusto.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+}
+
+.coluna-menos-custo {
+    margin-top: 10%;
+}
+
+.titulo-menos-custo {
+    font-weight: 300;
+    font-size: 36px;
+    max-width: 300px;
+}
+
+.titulo-bold {
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.coluna-tx {
+    margin-top: 14%;
+}
+
+.texto-menos-custo {
+    font-family: 'Lora', serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.imgs-vacas-e-bois {
+    margin-top: 3%;
+}
+
+.img-menos-custo {
+    border: #FFF 1px solid;
+}
+
+@media (min-width: 1800px) {
+    .imgs-vacas-e-bois {
+        margin-top: 10%;
+    }
+}
+
+/*========== JEITO RIZA ==========*/
+.jeito-riza {
+    background-image: url(../img/img-bg-jeitoriza-desktop.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.card-jeito-riza {
+    margin-top: 12.5%;
+}
+
+.card-jeito-riza img {
+    padding: 45px 0 15px 15px;
+}
+
+.card-jeito-riza p {
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    color: var(--branco);
+    padding: 0 15px 45px 15px;
+}
+
+.texto-jeito-riza {
+    margin-top: 17.5%;
+}
+
+.texto-jeito-riza p {
+    padding-left: 20px;
+    font-size: 18px;
+    font-family: 'Lora', serif;
+    color: var(--texto-cinza);
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.palavras-bold {
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Lora', serif;
+}
+
+/*========== INFOGRÁFICO DO PROCESSO DE PRODUÇÃO - RIZA ==========*/
+.info-processo {
+    margin-bottom: -200px;
+}
+
+.infografico {
+    display: flex;
+    justify-content: center;
+}
+
+#img-processo {
+    width: 750px;
+}
+
+/*======================= DEPOIMENTOS =========================*/
+
+.depoimentos {
+    background-image: url(../img/img-bg-depoimentos-desktop.jpg);
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+}
+
+.carrossel-depoimentos {
+    padding-top: 10%;
+}
+
+.fundo-carrossel {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.carrossel-depoimentos p {
+    max-width: 50%;
+    margin-left: 25%;
+    font-family: 'Lora', serif;
+}
+
+.carrossel-depoimentos h2 {
+    font-family: 'Lora', serif;
+}
+
+.aspas {
+    max-width: 90px;
+}
+
+/*Css para mobile e tablet*/
+@media(max-width:960px) {
+    .hero {
+        background-image: url(../img/img-hero-mobile.jpg);
+        padding-right: 25px;
+        padding-left: 25px;
+        height: 700px;
+        padding-top: 0%;
+
+    }
+
+    /*Primeira parte com o fundo de grama*/
+    .hero h2 {
+        margin-right: auto;
+        text-align: left;
+        font-size: 23px;
+        letter-spacing: 0.20px;
+        line-height: 31px;
+        margin-top: -60px;
+        margin-bottom: 25px;
+    }
+
+    .hero img {
+        width: 100%;
+    }
+
+    .texto-hero {
+        margin-top: 15px;
+        width: 96.2%;
+        color: var(--branco);
+        font-weight: 300;
+        font-size: 26px;
+        letter-spacing: 0.15px;
+        line-height: 40px;
+    }
+
+    .semibold {
+        font-weight: 600;
+    }
+
+    #btn-conheca {
+        padding: 15px 25px;
+        font-size: 17px;
+        font-weight: 400;
+    }
+
+    /*Parte depois do fundo verde*/
+    #img-sementes {
+        margin-top: -60px;
+        border-radius: 17px;
+    }
+
+    #faixa-hero {
+
+        height: 26px;
+        width: 100%;
+    }
+
+    /*Textos sobre a riza*/
+    .titulo-medio {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        font-size: 23px;
+        font-weight: 300;
+        line-height: 1.3;
+        width: 98.7%;
+        padding-left: 0%;
+        line-height: 31px;
+    }
+
+    .apresentacao-riza {
+        padding-left: 0%;
+    }
+
+    .texto1-home {
+        padding-left: 0%;
+        width: 94.41%;
+        font-weight: 400;
+    }
+
+    .maior {
+        width: 99.7%;
+    }
+
+    /*Parte com o fundo verde*/
+    .fundo-verde-mobile {
+        padding-top: 40px;
+        padding-bottom: 60px;
+        transform: skewY(-2deg);
+        padding-right: 8.8%;
+        padding-left: 8.8%;
+        background-image: linear-gradient(180deg, #0F4221, #0F4221, #050e08);
+        z-index: -1;
+        margin-top: 140px;
+
+    }
+
+    /*Classe que faz com que os elementos dentro da div verde não fiquem tortos*/
+    .desentorta {
+        transform: skewY(2deg);
+    }
+
+    .texto-parte-verde {
+        color: var(--branco);
+        line-height: 28px;
+        font-size: 18px;
+        font-family: 'Lora', serif;
+        font-weight: 400;
+
+    }
+
+    /*div que tira a inclinação do final da div verde*/
+    .completa-final-verde {
+        position: relative;
+        margin-top: -10px;
+        margin-bottom: 20px;
+        background-color: #050e08;
+        height: 18px;
+    }
+
+    .central-img {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .titulo-parte-verde {
+        font-size: 21;
+        color: var(--branco);
+        margin-bottom: 15px;
+    }
+
+    .info-processo {
+        width: 100%;
+    }
+
+    .intro-capim {
+        background-image: none;
+        position: relative;
+        width: 100%;
+    }
+
+    /*Parte com o fundo laranja e a imagem verde*/
+    .area-fundo-laranja {
+        background-image: url(../img/bg-orange-mobile@2x.png);
+        position: relative;
+        width: 100%;
+        padding: 80px 45px 30.5px 45px;
+        margin-top: 230px;
+    }
+
+    .img-triangulo {
+        width: 100%;
+        height: 10px;
+        margin-left: -13px;
+    }
+
+    .img-triangulo img {
+        width: 120%;
+        margin-top: -105%;
+    }
+
+    /*Parte depois da div com o cundo laranja*/
+    #titulo-capim {
+        font-size: 41px;
+        font-weight: 500;
+        color: var(--branco);
+        margin-right: 3.8%;
+        margin-left: 3.8%;
+        line-height: 52px;
+        text-align: center;
+    }
+
+    .texto-capim {
+        width: 97.05%;
+    }
+
+    /*Parte com as imagens de bois e vacas e um fundo verte*/
+
+    .divisoria-vacas {
+        margin-bottom: -8px;
+        width: 100%;
+    }
+
+    .divisoria-vacas img {
+        width: 100%;
+    }
+
+    .img-bois {
+        width: 100%;
+    }
+
+    .img-bois img {
+        width: 100%;
+    }
+
+    .img-vacas {
+        width: 100%;
+    }
+
+    .img-vacas img {
+        width: 100%;
+    }
+
+    .fundo-verde-custo-kg {
+        position: relative;
+        background-image: url(../img/bg-green-mobile@2x.png);
+        background-size: cover;
+        padding-bottom: 55px;
+        padding-top: 35px;
+        margin-top: 1px;
+    }
+
+    .texto-menos-custo {
+        margin-right: 10.69%;
+        margin-left: 10.69%;
+        font-size: 41px;
+        line-height: 52px;
+        color: var(--branco);
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 500;
+    }
+
+    /*Textos depois da parte dos bois e vacas*/
+    .texto-depois-da-parte-verde {
+        position: relative;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-right: 7.08%;
+        margin-left: 7.08%;
+    }
+
+    .texto-depois-da-parte-verde p {
+        font-size: 18px;
+        font-family: 'Lora', serif;
+        line-height: 28px;
+    }
+
+    /*Parte com o fundo laranja e o texto branco*/
+    .fundo-laranja-jeito-riza {
+        padding: 10px 7.5% 20px 10%;
+
+    }
+
+    .lora-bold {
+        font-weight: 700;
+        font-family: 'Lora', serif;
+    }
+
+    .logo-e-txt {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 53px;
+        margin-bottom: 15px;
+    }
+
+    .logo-e-txt img {
+        height: 87%;
+        margin-top: 10.9px;
+    }
+
+    /*Texto depois da parte com o fundo laranja*/
+    .txt-jeito-riza {
+        font-size: 35px;
+        margin-left: 15px;
+    }
+
+    .fundo-laranja-jeito-riza p {
+        font-size: 23px;
+        line-height: 38px;
+        font-family: 'Lora', serif;
+    }
+
+    .texto-jeito-riza {
+        margin-top: 17.5%;
+        padding-right: 7.91%;
+        padding-left: 7.91%;
+        margin-bottom: 100px;
+    }
+
+    .texto-jeito-riza p {
+        padding-left: 0px;
+        font-size: 20px;
+        font-family: 'Lora', serif;
+        color: var(--texto-cinza);
+
+        line-height: 30px;
+    }
+
+    .palavras-bold {
+        font-size: 20px;
+    }
+
+    /*imagens finais*/
+    #img-processo {
+
+        width: 100%;
+    }
+
+    .img-logo {
+        height: auto;
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    /*css para celulares pequenos*/
+    @media(max-width:315px) {
+
+        .texto-hero {
+
+            font-size: 24px;
+
+            line-height: 30px;
+        }
+    }
+
+    /*css para celulares grandes*/
+    @media(min-width:375px) {
+        .img-triangulo img {
+            width: 100%;
+            margin-left: 8%;
+            margin-top: -85%;
+        }
+
+        .area-fundo-laranja {
+
+            margin-top: 250px;
+            padding-bottom: 90px;
+        }
+
+    }
+
+    /*css para celulares gigantes*/
+    @media(min-width:465px) {
+
+        .area-fundo-laranja {
+
+            margin-top: 310px;
+            padding-bottom: 90px;
+        }
+
+    }
+
+    /*css para tablet*/
+    @media(min-width: 600px) {
+        .completa-final-verde {
+
+            margin-top: -15px;
+            margin-bottom: 50px;
+
+            height: 30px;
+        }
+
+        #img-sementes {
+            margin-top: -150px;
+            border-radius: 17px;
+        }
+
+        #btn-conheca {
+            margin-top: 50px;
+        }
+
+        .texto-hero {
+            margin-top: 90px;
+        }
+
+        .hero h2 {
+            font-size: 26px;
+            margin-top: -50px;
+
+        }
+
+        .img-triangulo {
+            display: flex;
+            align-items: center;
+        }
+
+        .img-triangulo img {
+
+            width: 80%;
+            margin-top: -65%;
+            margin-left: 15%;
+        }
+
+        .area-fundo-laranja {
+
+            margin-top: 300px;
+            padding-top: 150px;
+            padding-bottom: 150px;
+        }
+
+        .linha-texto-after-laranja {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .texto-capim {
+            width: 100%;
+            text-align: justify;
+
+        }
+
+        .esquerda {
+            padding-right: 25px;
+        }
+
+        .direita {
+            padding-left: 25px;
+        }
+
+        .fundo-verde-custo-kg {
+            margin-bottom: 100px;
+        }
+
+        .fundo-laranja-jeito-riza {
+            padding: 70px 7.5% 80px 10%;
+            margin-top: 100px;
+        }
+
+        @media(min-width: 740px) {
+            .area-fundo-laranja {
+
+                margin-top: 400px;
+                padding-top: 150px;
+                padding-bottom: 150px;
+            }
+        }
+    }
+}

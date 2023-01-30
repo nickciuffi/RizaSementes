@@ -1,0 +1,47 @@
+#Forçar SSL 
+RewriteEngine On 
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+#tira o .html
+<IfModule mod_rewrite.c>
+Options +FollowSymLinks -MultiViews
+RewriteEngine On
+RewriteBase /
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.html [NC]
+RewriteRule ^ %1 [R,L]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*?)/?$ $1.html [L]
+</IfModule>
+
+#Redirect INDEX
+RewriteRule ^index(/|.html)?$ https://rizasementes.com.br/ [R=301,L]
+
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access plus 1 year"
+ExpiresByType image/jpeg "access plus 1 year"
+ExpiresByType image/gif "access plus 1 year"
+ExpiresByType image/png "access plus 1 year"
+ExpiresByType text/css "access plus 1 month"
+ExpiresByType application/pdf "access plus 1 month"
+ExpiresByType text/x-javascript "access plus 1 month"
+ExpiresByType application/x-shockwave-flash "access plus 1 month"
+ExpiresByType image/x-icon "access plus 1 year"
+ExpiresDefault "access plus 7 days"
+</IfModule>
+## EXPIRES CACHING ##
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^www\.rizasementes\.com\.br$
+RewriteRule ^/?$ "https\:\/\/rizasementes\.com\.br\/" [R=301,L]
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^www\.rizasementes\.com\.br$
+RewriteRule ^sobre$ "https\:\/\/rizasementes\.com\.br\/sobre" [R=301,L]
+RewriteCond %{HTTP_HOST} ^rizasementes\.com\.br$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.rizasementes\.com\.br$
+RewriteRule ^index$ "https\:\/\/rizasementes\.com\.br\/" [R=301,L]
+

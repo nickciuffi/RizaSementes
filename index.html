@@ -1,0 +1,458 @@
+<!-- Página inicial do site rizasementes.com.br, desenvolvido com o auxílio do framework MATERIALIZECSS, disponível em https://materializecss.com/, que fornece estilizações CSS e funções JavaScript, que também incluem o JQuery, para facilitar o script.
+O Materialize está baixado, tendo arquivos nas pastas css e js. 
+O Jquery está linkado com a cdn no site http://code.jquery.com/ -->
+
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+  <!--Meta utf-8 para caractéres latinos-->
+  <meta charset="utf-8">
+  <!--Otimização para tamanho da tela e mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--Metas SEO-->
+  <meta name="description"
+    content="Sementes de capim de alta qualidade para agricultura e pecuária. Livre de queimadas. Campos próprios. Menos custo e mais kg de proteína e litros de leite por hectare. Sementes de Marandu, Ruziziensis, Mombaça, Xaraés, La-liberdad, BRS Piatã">
+  <meta name="keywords"
+    content="Riza Sementes, Riza, Sementes, cultivares, marandu, ruziziensis, mombaça, xaraés, la-liberdad, brs piatã, venda de sementes, plantação, criação de gado, agricultura, pecuária">
+  <meta name="author" content="Fluency Design">
+  <!--Título da página-->
+  <title>Riza Sementes - Sementes de capim de alta qualidade</title>
+  <!--Importação dos ícones do Font Awesome-->
+  <script src="https://kit.fontawesome.com/876f80b0f5.js" crossorigin="anonymous"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-209074474-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-209074474-1');
+</script>
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '368684755042676');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=368684755042676&ev=PageView&noscript=1"
+/></noscript>
+
+  <!--Font LORA e OPEN SANS do google fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Open+Sans:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+  <!--Importação do materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <!--Importação dos arquivos CSS, que definem padrões de estilização para a página-->
+  <link type="text/css" rel="stylesheet" href="css/global.css" />
+  <link type="text/css" rel="stylesheet" href="css/home.css" />
+  <link type="text/css" rel="stylesheet" href="css/footer.css" />
+  <link type="text/css" rel="stylesheet" href="css/back-to-top.css" />
+
+</head>
+
+<body>
+  <!-- Back to top button -->
+  <a id="button" class="hide-on-small-only"></a>
+  <!--Botão whatsapp-->
+  <div class="fixed-action-btn hide-on-small-only">
+    <a href="https://wa.me/5538997352843" rel="noopener" target="_blank" class="btn-floating btn-large green darken-2">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+  <!------------------------------------Cabeçalho---------------------------------->
+  <header>
+  <div class="header">
+   
+   
+  </div>
+</header>
+  <!------------------------- HERO - TELA INICIAL ----------------------------------->
+  <div class="hero">
+    <div class="video-fundo hide-on-med-and-down">
+      <div class="textura"></div>
+      <video autoplay muted loop preload="auto" class="video" poster="img/hero.jpg">
+        <source src="img/bg-index-video.mp4" type="video/mp4">
+      </video>
+    </div>
+    <h2 class="bold">Semeando<br class="hide-on-med-and-up"> o agronegócio<br class="hide-on-med-and-up"> do futuro.
+    </h2>
+    <img src="img/linha_9.png" alt="Linha divisoria">
+    <h1 class="texto-hero">O capim é o melhor instrumento para
+      <span class="bold">recuperação da vida do solo</span> e uma das alternativas mais <span
+        class="bold">sustentáveis</span> e efetivas para o aumento da <span class="bold">produtividade</span> no
+      campo.
+    </h1>
+    <a id="btn-conheca" href="produtos" class="waves-effect waves-dark laranja radius z-depth-3">
+      CONHEÇA A CULTIVAR IDEAL PARA O SEU CAMPO
+    </a>
+  </div>
+
+  <div id="faixa-hero"></div>
+
+  <!-----------------IMAGEM DE SEMENTES + APRESENTAÇÃO RIZA INICIAL------------------------>
+  <div class="container row">
+    <div class="col s12 m12 l6">
+      <img id="img-sementes" class="radius12 z-depth-4" src="img/img-home-sementes.jpg" alt="Imagem de Sementes">
+    </div>
+    <div class="col s12 m12 l6 apresentacao-riza">
+      <h3 class="titulo-medio cinza texto-col2">
+        Produzir <spam class="semibold">sementes de alta qualidade e conhecimento aplicado</spam> para difundir e
+        fortalecer o uso do capim como
+        ferramenta de produtividade na<br class="hide-on-med-and-up">
+        <span class="bold"> agricultura e pecuária</span> tropical.
+      </h3>
+      <p class="texto1-home cinza texto-col2">Para nós da Riza Sementes, o aumento sustentável da produtividade no campo,
+        seja na agricultura ou na pecuária, tem como ponto de partida a recuperação da vida do solo.</p>
+      <div class="linha-laranja hide-on-med-and-down"></div>
+    </div>
+  </div>
+
+  <!---------------------- CONTINUAÇÃO DE TEXTOS - LINHA 2-------------------------------->
+  <div id="tx-pt2" class="row container">
+    <div class="col s12 m12 l6">
+      <p class="texto1-home maior cinza hide-on-med-and-down">A Riza Sementes é parte da iefe | agro, um grupo de
+        agronegócios com forte atuação na
+        produção de soja, milho e feijão. A integração da produção de sementes de capim com o cultivo de cereais, em
+        sistema de rotação, viabiliza uma importante estratégia agronômica com investimentos significativos na nutrição
+        de solo: um dos principais fundamentos para assegurar plantas vigorosas, que todos sabemos ser a base para
+        geração de sementes de alta qualidade. Não existe mágica. Para assegurar a satisfação dos nossos clientes
+        investimos em ciência e tecnologia, com muito profissionalismo.</p>
+      <p class="texto1-home maior cinza hide-on-large-only">A Riza Sementes é parte da iefe | agro, um grupo de
+        agronegócios com forte atuação na
+        produção de soja, milho e feijão. A integração da produção de sementes de capim com o cultivo de cereais, em
+        sistema de rotação, viabiliza uma importante estratégia agronômica com investimentos significativos na nutrição
+        de solo: um dos principais fundamentos para assegurar plantas vigorosas, que todos sabemos ser a base para
+        geração de sementes de alta qualidade.</p>
+    </div>
+    <div class="col s12 m12 l6 hide-on-med-and-down">
+      <p class="texto1-home cinza texto-col2">Atuamos com uma das maiores áreas de produção de sementes de capim em
+        campos próprios do mercado. Desta forma conseguimos assegurar um rigoroso controle de qualidade, de
+        ponta-a-ponta: do preparo do solo à colheita, beneficiamento e armazenagem em condições controladas, passando
+        por todo o manejo da lavoura.</p>
+      <p class="texto1-home cinza texto-col2 espaco-linha hide-on-med-and-down">Assim como em qualquer cultura, a
+        produção de sementes de
+        capim é coisa séria, cercada dos mesmos cuidados e conhecimento demandados na produção de sementes de soja,
+        milho e algodão, por exemplo. Todos estes cuidados resultam na qualidade e pureza das nossas sementes, que já
+        conquistaram a confiança de importantes embaladoras de sementes do mercado.</p>
+      <p class="texto1-home cinza texto-col2 espaco-linha hide-on-large-only">Produção de sementes de capim é coisa
+        séria, cercada dos mesmos cuidados e conhecimento demandados na produção de sementes de soja, milho e algodão,
+        por exemplo. Todos estes cuidados resultam na qualidade e pureza das nossas sementes, que já conquistaram a
+        confiança de importantes embaladoras de sementes do mercado.</p>
+    </div>
+  </div>
+  <!--Qualidade de ponta a ponta com fundo verde mobile-->
+  <div class="fundo-verde-mobile hide-on-large-only">
+    <div class="desentorta">
+      <div class="central-img">
+        <img class="img" src="img/qualidade-de-ponta-a-ponta@2x.png" alt="Selo - Qualidade de ponta-a-ponta">
+      </div>
+      <p class="texto-parte-verde">Atuamos com uma das maiores áreas de produção de sementes de capim em
+        campos próprios do mercado. Desta forma conseguimos assegurar um rigoroso controle de qualidade, de
+        ponta-a-ponta: do preparo do solo à colheita, beneficiamento e armazenagem em condições controladas, passando
+        por todo o manejo da lavoura.<br><br>
+        Produção de sementes de capim é coisa séria, cercada dos mesmos cuidados e conhecimento demandados na produção
+        de sementes de soja, milho e algodão, por exemplo. Todos estes cuidados resultam na qualidade e pureza das
+        nossas sementes, que já conquistam a confiança de importantes embaladoras de sementes do mercado.</p>
+    </div>
+  </div>
+  <div class="completa-final-verde">
+
+  </div>
+  <div class="row container hide-on-large-only">
+    <div class="col l6 m12 centralizado">
+  <p class="texto-capim espaco-linha hide-on-large-only">A agricultura e a pecuária do futuro passam necessariamente pela
+    <span class="tx-bold"> recuperação da vida do solo.</span></p>
+  <p class="texto-capim espaco-linha hide-on-large-only">Abordagens agronômicas mais contemporâneas passaram a considerar que a
+    
+    <span class="tx-bold hide-on-large-only"> fertilidade do solo precisa combinar três aspectos: </span></p>
+</div></div>
+  <!--Imagem triangulo apenas para mobile e tablet-->
+  <div class="area-fundo-laranja hide-on-large-only">
+    <div class="img-triangulo">
+      <img src="img/icon-beneficios-mobile@2x.png" alt="Benefícios">
+    </div>
+    <h3 id="titulo-capim">Principais Benefícios<br> do Capim</h3>
+  </div>
+  <!---------------PRINCIPAIS BENEFÍCIOS DO CAPIM - INTRO PARA INFOGRÁFICOS---------------->
+  <div class="intro-capim">
+    <div class="row container">
+      <div class="col l6 m12 centralizado">
+
+        <h3 id="titulo-capim" class="hide-on-med-and-down">
+          Principais benefícios do capim</h3>
+        <p class="texto-capim espaco-linha hide-on-med-and-down">A agricultura e a pecuária do futuro passam necessariamente pela
+          <span class="tx-bold"> recuperação da vida do solo.</span></p>
+        <p class="texto-capim espaco-linha hide-on-med-and-down">Abordagens agronômicas mais contemporâneas passaram a considerar que a
+          fertilidade do solo precisa combinar três aspectos:
+          <span class="tx-bold hide-on-large-only"> fertilidade do solo precisa combinar três aspectos: </span></p>
+      </div>
+      <div class="col l6 hide-on-med-and-down">
+        <img class="img-beneficios-desk" src="img/beneficios-desktop.png" alt="Benefícios do Capim">
+      </div>
+    </div>
+  </div>
+
+  <!--------------------- CARROSSEL PARA DESKTOP----------------------------->
+  <div class="Carrosel container hide-on-med-and-down">
+    <!-- Imagens do carrossel -->
+    <div class="mySlides fade">
+      <img src="img/info-biologicos-desktop.jpg" alt="Infográfico - Benefícios Biológicos" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img/info-fisicos-desktop.jpg" alt="Infográfico - Benefícios Físicos" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img/info-quimicos-desktop.jpg" alt="Infográfico - Benefícios Químicos" style="width:100%">
+    </div>
+    <!-- Setas -->
+    <div class="prev left" onclick="plusSlides(-1)">
+      <a>
+        <img src="img/back.png" alt="Slide Anterior">
+      </a>
+    </div>
+    <div class="next right" onclick="plusSlides(1)">
+      <a>
+        <img src="img/next.png" alt="Próximo Slide">
+      </a>
+    </div>
+  </div>
+  <br>
+  <!-- Pontinhos -->
+  <div class="pontinhos">
+    <div style="text-align:center" class="hide-on-med-and-down">
+      <span class="pontos" onclick="currentSlide(1)"></span>
+      <span class="pontos" onclick="currentSlide(2)"></span>
+      <span class="pontos" onclick="currentSlide(3)"></span>
+    </div>
+  </div>
+  <!--------------------- CARROSSEL MOBILE----------------------------->
+  <!-- Imagens do carrossel -->
+  <div class="hide-on-large-only">
+    <div class="mySlides-mob fade">
+      <img src="img/info-mobile-biologicos.jpg" alt="Infográfico - Benefícios Biológicos" style="width:100%">
+    </div>
+
+    <div class="mySlides-mob fade">
+      <img src="img/info-mobile-fisicos.jpg" alt="Infográfico - Benefícios Físicos" style="width:100%">
+    </div>
+
+    <div class="mySlides-mob fade">
+      <img src="img/info-mobile-quimicos.jpg" alt="Infográfico - Benefícios Químicos" style="width:100%">
+    </div>
+    <!-- Setas -->
+    <div class="setas-mob">
+      <div class="prev-mob left" onclick="plusSlidesmob(-1)">
+        <a>
+          <img src="img/back.png" alt="Slide Anterior">
+        </a>
+      </div>
+      <div class="next-mob right" onclick="plusSlidesmob(1)">
+        <a>
+          <img src="img/next.png" alt="Próximo Slide">
+        </a>
+      </div>
+    </div>
+    <br>
+    <!-- Pontinhos -->
+    <div class="pontinhos-mob" style="text-align:center">
+      <span class="pontos-mob" onclick="currentSlidemob(1)"></span>
+      <span class="pontos-mob" onclick="currentSlidemob(2)"></span>
+      <span class="pontos-mob" onclick="currentSlidemob(3)"></span>
+    </div>
+  </div>
+  <!-------------------DIV MENOS CUSTO E MAIS KG DESKTOP----------------------->
+
+  <div class="menos-custo hide-on-med-and-down">
+    <div class="container">
+      <div class="row">
+        <div class="col m4 coluna-menos-custo">
+          <h3 class="titulo-menos-custo">
+            <span class="titulo-bold"> Menor custo e maior ganho</span>
+            de peso em arroba e litros de leite por hectare.</h3>
+        </div>
+        <div class="col m4 coluna-tx">
+          <p class="texto-menos-custo">Na pecuária, a recuperação de pastagens, considerando o resgate da vida do solo,
+            produz pastos com maior valor nutricional, impactando diretamente no ciclo e engorda do plantel e no aumento
+            da qualidade e do volume de leite.</p>
+        </div>
+        <div class="col m4 coluna-tx">
+          <p class="texto-menos-custo">Na agricultura, a melhoria das condições físicas, químicas e biológicas do solo
+            reduz a demanda por adubação química e aplicação de defensivos, que somados ao aumento de produtividade
+            viabilizam a combinação mais desejada pelos produtores:
+            <span class="tx-bold"> mais produção com menos custos.</span>
+          </p>
+        </div>
+      </div>
+      <div class="row imgs-vacas-e-bois">
+        <div class="col m6">
+          <img class="radius12 img img-menos-custo z-depth-2" src="img/img-bois.jpg" alt="Imagem de Bois">
+        </div>
+        <div class="col m6">
+          <img class="radius12 img img-menos-custo z-depth-2" src="img/img-vacas.jpg" alt="Imagem de Vacas">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="espacamento"></div>
+
+  <!--MENOS CUSTO E MAIS KGS MOBILE E TABLET-->
+
+  <div class="divisoria-vacas hide-on-large-only">
+    <img src="img/divisoria-vacas-mobile.png" alt="divisoria laranja">
+  </div>
+  <div class="img-bois hide-on-large-only">
+    <img src="img/img-bois.jpg" alt="Bois pastando">
+  </div>
+  <div class="img-vacas hide-on-large-only">
+    <img src="img/img-vacas.jpg" alt="Vacas pastando">
+  </div>
+  <div class="fundo-verde-custo-kg hide-on-large-only">
+    <p class="texto-menos-custo">
+      Menor custo e maior ganho de peso em arroba e litros de leite por hectare.
+    </p>
+  </div>
+
+  <!--TEXTO DEPOIS DA PARTE VERDE-->
+  <div class="texto-depois-da-parte-verde hide-on-large-only">
+    <p>Na pecuária, a recuperação de pastagens, considerando o resgate da vida do solo, produz pastos com maior valor
+      nutricional, impactando diretamente no ciclo e engorda do plantel e no aumento da qualidade e do volume de leite.
+      <br><br>
+      Na agricultura, a melhoria das condições físicas, químicas e biológicas do solo reduz a demanda por adubação
+      química e aplicação de defensivos, que somados ao aumento de produtividade viabilizam a combinação mais desejada
+      pelos produtores:<br>
+      <span class="lora-bold"> mais produção com menos custos.</span></p>
+  </div>
+  <!----------------DIV - O JEITO RIZA DESKTOP------------------------->
+  <div class="jeito-riza hide-on-med-and-down">
+    <div class="container">
+      <div class="row">
+        <div class="col m6 card-jeito-riza card laranja radius12">
+          <img src="img/medalha-jeito-riza.png" alt="Selo - Jeito Riza">
+          <p>Confira, em detalhes, o passo-a-passo do processo de produção que resulta na Alta Qualidade das Nossas
+            Sementes.</p>
+        </div>
+        <div class="col m6 texto-jeito-riza">
+          <p>A qualidade na produção de sementes é resultado de um conjunto de fatores, que tem como pilar um conceito
+            que definimos como
+            <span class="palavras-bold">construção da planta.</span> Envolve atenção especial ao <span
+              class="palavras-bold"> preparo do solo, escolha das sementes e a proteção da lavoura, que asseguram a
+              geração de plantas fortes.</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--JEITO RIZA MOBILE E TABLET-->
+  <div class="fundo-laranja-jeito-riza laranja hide-on-large-only">
+    <div class="logo-e-txt">
+      <img src="img/medalha-jeito-riza.png" alt="Selo - Jeito Riza">
+    </div>
+    <p>Confira, em detalhes, o <br class="hide-on-med-and-up">passo-a-passo do processo de produção que resulta<br
+        class="hide-on-med-and-up"> na Alta Qualidade das <br class="hide-on-med-and-up">nossas
+      Sementes.</p>
+  </div>
+
+
+  <div class="texto-jeito-riza hide-on-large-only">
+    <p>A qualidade na produção de sementes é resultado de um conjunto de fatores, que tem como pilar um conceito
+      que definimos como
+      <span class="palavras-bold">construção da planta.</span> Envolve atenção especial ao <span class="palavras-bold">
+        preparo do solo, escolha das sementes e a proteção da lavoura, que asseguram a
+        geração de plantas fortes.</span></p>
+  </div>
+
+
+
+  <!--------------------------------INFOGRÁFICO DO PROCESSO------------------------------->
+  <div class="info-processo container">
+    <div class="row">
+      <div class="col s6 m6 l6 hide-on-large-only">
+        <img src="img/logo-riza-cor.png" alt="Logo da Riza" class="img-logo">
+      </div>
+      <div class="col m12 hide-on-med-and-down">
+        <img src="img/logo-riza-cor.png" alt="Logo da Riza">
+      </div>
+      <div class="col m12 infografico">
+        <img src="img/info-ok.jpg" id="img-processo" alt="Infográfico do Processo de produção"
+          class="hide-on-med-and-down">
+        <img src="img/info-ok-mobile@2x.jpg" id="img-processo" alt="Infográfico do Processo de produção"
+          class="hide-on-large-only img">
+      </div>
+    </div>
+  </div>
+
+
+  <!--------------------------------DEPOIMENTOS-----------------------------
+  <div class="depoimentos">
+    <div class="carrossel-depoimentos">
+      <div class="container">
+        <div class="carousel carousel-slider center white-text">
+          <div class="carousel-item fundo-carrossel white-text" href="#one!">
+            <h2>Depoimentos</h2>
+            <img class="aspas" src="img/aspas.png" alt="Aspas - Depoimento">
+            <p class="white-text">Com uma crença claramente apoiada na necessidade de buscarmos uma agricultura cada vez mais produtiva e sustentável, a partir da recuperação da vida do solo, e um senso de propósito voltado à produção de sementes de alta qualidade e à pesquisa e compartilhamento de conhecimento </p>
+          </div>
+          <div class="carousel-item fundo-carrossel white-text" href="#two!">
+            <h2>Depoimentos</h2>
+            <img class="aspas" src="img/aspas.png" alt="Aspas - Depoimento">
+            <p class="white-text">Com uma crença claramente apoiada na necessidade de buscarmos uma agricultura cada vez mais produtiva e sustentável, a partir da recuperação da vida do solo, e um senso de propósito voltado à produção de sementes de alta qualidade e à pesquisa e compartilhamento de conhecimento </p>
+          </div>
+          <div class="carousel-item fundo-carrossel white-text" href="#three!">
+            <h2>Depoimentos</h2>
+            <img class="aspas" src="img/aspas.png" alt="Aspas - Depoimento">
+            <p class="white-text">Com uma crença claramente apoiada na necessidade de buscarmos uma agricultura cada vez mais produtiva e sustentável, a partir da recuperação da vida do solo, e um senso de propósito voltado à produção de sementes de alta qualidade e à pesquisa e compartilhamento de conhecimento </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  -->
+
+  <div class="footer"></div>
+  <!--Importação do JQuery CDN, para funções JavaScript-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!--Importação do JavaScript do Materialize-->
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/redirect-www.js"></script>
+  <script type="text/javascript" src="js/carrossel-js.js"></script>
+  <script type="text/javascript" src="js/carrossel-js-mob.js"></script>
+  <script type="text/javascript" src="js/back-to-top.js"></script>
+  <script type="text/javascript" src="js/flickity.pkgd.js"></script>
+  
+  <script>
+  
+    //Fixar navbar
+    $(document).ready(function () {
+      $('.alvo-pin').pushpin({
+        top: 1
+      });
+    });
+    /*Aciona o Carrossel de depoimentos*/
+    $('.carousel.carousel-slider').carousel({
+      fullWidth: true,
+      indicators: true
+    });
+    //inclusão do footer
+    $(".footer").load("footer.html");
+    $(".header").load("header.html");
+
+  </script>
+
+</body>
+
+</html>
